@@ -1,0 +1,78 @@
+{
+  "n_questions": 85,
+  "mode": "raw_query_no_filter",
+  "k_wide": 12,
+  "k_strict": 5,
+  "configs": {
+    "dense": {
+      "n": 85,
+      "recall@5": 0.8686,
+      "hit@5": 0.9294,
+      "precision@5": 0.6565,
+      "mrr@5": 0.762,
+      "recall@12": 0.9275,
+      "hit@12": 0.9529,
+      "precision@12": 0.6255,
+      "mrr@12": 0.7656
+    },
+    "sparse": {
+      "n": 85,
+      "recall@5": 0.7333,
+      "hit@5": 0.7647,
+      "precision@5": 0.5459,
+      "mrr@5": 0.6002,
+      "recall@12": 0.7725,
+      "hit@12": 0.8,
+      "precision@12": 0.548,
+      "mrr@12": 0.6045
+    },
+    "hybrid": {
+      "n": 85,
+      "recall@5": 0.8961,
+      "hit@5": 0.9412,
+      "precision@5": 0.64,
+      "mrr@5": 0.7696,
+      "recall@12": 0.9255,
+      "hit@12": 0.9529,
+      "precision@12": 0.6314,
+      "mrr@12": 0.7713
+    },
+    "hybrid_rerank": {
+      "n": 85,
+      "recall@5": 0.898,
+      "hit@5": 0.9412,
+      "precision@5": 0.7624,
+      "mrr@5": 0.8925,
+      "recall@12": 0.898,
+      "hit@12": 0.9412,
+      "precision@12": 0.7624,
+      "mrr@12": 0.8925
+    }
+  },
+  "deltas": {
+    "hybrid_vs_dense@12_recall": {
+      "abs_pp": -0.2,
+      "rel_pct": -0.2
+    },
+    "hybrid_vs_dense@5_recall": {
+      "abs_pp": 2.75,
+      "rel_pct": 3.2
+    },
+    "hybrid_vs_dense@12_mrr": {
+      "abs_pp": 0.57,
+      "rel_pct": 0.7
+    },
+    "rerank_vs_hybrid@5_recall": {
+      "abs_pp": 0.19,
+      "rel_pct": 0.2
+    },
+    "rerank_vs_hybrid@5_mrr": {
+      "abs_pp": 12.29,
+      "rel_pct": 16.0
+    },
+    "rerank_vs_dense@5_recall": {
+      "abs_pp": 2.94,
+      "rel_pct": 3.4
+    }
+  }
+}

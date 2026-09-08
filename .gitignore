@@ -1,0 +1,24 @@
+# 数据文件（体积大，不入库）
+*.pdf
+qdrant_data/
+*.sqlite
+*.db
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# 环境与密钥
+.env
+*.key
+*.pem
+
+# IDE
+.idea/
+.vscode/
+
+# 评测临时输出（保留 results/ 下的汇总 JSON/CSV）
+evaluation/results/*_tmp.*
